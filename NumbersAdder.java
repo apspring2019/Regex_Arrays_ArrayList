@@ -1,4 +1,3 @@
-import java.util.Arrays;
 import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -10,7 +9,8 @@ public class NumbersAdder
         System.err.println(sumUpNumbersInText("hello 123 321"));
         Scanner scanner = new Scanner(System.in);
         String inputLine;
-        while (!(inputLine = scanner.nextLine()).equalsIgnoreCase("end")) //Getting input till 'end' is not input
+        while (scanner.hasNextLine() &&
+                !(inputLine = scanner.nextLine()).equalsIgnoreCase("end")) //Getting input till 'end' is not input
             System.out.println(sumUpNumbersInText(inputLine));
     }
 

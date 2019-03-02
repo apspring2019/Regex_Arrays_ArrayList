@@ -14,7 +14,8 @@ public class DurationCalculatorRegex
         processString("12:20 -> 13:50");
         Scanner scanner = new Scanner(System.in);
         String inputLine;
-        while (!(inputLine = scanner.nextLine()).equalsIgnoreCase("end")) //Getting input till 'end' is not input
+        while (scanner.hasNextLine() &&
+                !(inputLine = scanner.nextLine()).equalsIgnoreCase("end")) //Getting input till 'end' is not input
             processString(inputLine);
 
     }
