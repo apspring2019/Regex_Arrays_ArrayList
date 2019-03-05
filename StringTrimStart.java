@@ -15,7 +15,7 @@ public class StringTrimStart
      * Returns a string without any leading character in the list
      * @param str the string to be trimmed
      * @param chars the list of characters
-     * @return
+     * @return the trimmed string
      */
     private static String trimStringStart(String str, char... chars)
     {
