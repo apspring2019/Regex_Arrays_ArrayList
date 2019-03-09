@@ -14,7 +14,7 @@ public class DateParser
             printDateParts(inputLine);
     }
 
-    private static Pattern datePattern = Pattern.compile("^(\\d{2,4})/(\\d{1,2})/(\\d{1,2})$");
+    private static Pattern datePattern = Pattern.compile("^(\\d{2}|\\d{4})/(\\d{1,2})/(\\d{1,2})$");
     private static void printDateParts(String strDate)
     {
         Matcher matcher = datePattern.matcher(strDate);
